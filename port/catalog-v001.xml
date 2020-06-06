@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://drozdowicz.net/onto/access-control/1.0.0" uri="file:/D:/git/phd/thesis/Ontologies/accesscontrol/access-control.owl"/>
+    <uri id="Imports Wizard Entry" name="http://drozdowicz.net/onto/port" uri="port.owl"/>
+    <uri id="User Entered Import Resolution" name="http://drozdowicz.net/onto/iot" uri="file:/D:/git/phd/thesis/Ontologies/iot/iot.owl"/>
+    <uri id="User Edited Redirect" name="http://ontology.tno.nl/logiserv" uri="logiserv.ttl"/>
+    <uri id="User Edited Redirect" name="http://ontology.tno.nl/logico" uri="logico.ttl"/>
+    <uri id="User Edited Redirect" name="http://ontology.tno.nl/transport" uri="transport.ttl"/>
+    <group id="Folder Repository, directory=file:/D:/git/phd/thesis/Ontologies/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="file:/D:/git/phd/thesis/Ontologies/">
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/access-control-action" uri="accesscontrol/access-control-action.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/access-control:" uri="accesscontrol/access-control.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/iot" uri="iot/iot.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/port" uri="port/port.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/port_inst" uri="port/port_inst.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/port_mapping" uri="port/port_mapping.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/rbac" uri="accesscontrol/rbac.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/request/" uri="accesscontrol/request.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/transport_inst" uri="port/transport_inst.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/sxacml/PrivacySample" uri="smartcity/PrivacySample.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/sxacml/eHealthSample" uri="ehealth/eHealth.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/CRUDEA_OperationOntology.owl" uri="smartcity/CRUDEA_OperationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/ClinicalObservationOntology.owl" uri="smartcity/ClinicalObservationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/CompartmentOntology.owl" uri="smartcity/CompartmentOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/ConfidentialityOntology.owl" uri="smartcity/ConfidentialityOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/DataOperationOntology.owl" uri="smartcity/DataOperationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/IntegrityOntology.owl" uri="smartcity/IntegrityOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/ObjectOntology.owl" uri="smartcity/ObjectOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/ObligationOntology.owl" uri="smartcity/ObligationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/PaymentSourceOntology.owl" uri="smartcity/PaymentSourceOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/PermissionOntology.owl" uri="smartcity/PermissionOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/PrivacyOperationOntology.owl" uri="smartcity/PrivacyOperationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/PurposeOfUseOntology.owl" uri="smartcity/PurposeOfUseOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/RBAC_Ontology.owl" uri="smartcity/RBAC_Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/RefrainOntology.owl" uri="smartcity/RefrainOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/RoleOntology.owl" uri="smartcity/RoleOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/RouteOntology.owl" uri="smartcity/RouteOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/SecurityAndPrivacyOntology.owl" uri="smartcity/SecurityAndPrivacyOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/SensitivityOntology.owl" uri="smartcity/SensitivityOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/ServiceDeliveryLocationOntology.owl" uri="smartcity/ServiceDeliveryLocationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/SomewhereHospitalOntology.owl" uri="smartcity/SomewhereHospitalOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://p3p.jrc.it/privacyontology/2004/07/p3powlv1.owl#" uri="smartcity/p3p.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://www.opengis.net/ont/geosparql" uri="iot/geosparql_vocab_all.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://www.owl-ontologies.com/generations.owl" uri="ehealth/generations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://www.w3.org/2002/07/owl" uri="smartcity/m3-lite.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://www.w3.org/2006/time" uri="smartcity/time.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/CRUDEA_OperationOntology.owl" uri="ehealth/CRUDEA_OperationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/ClinicalObservationOntology.owl" uri="ehealth/ClinicalObservationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/CompartmentOntology.owl" uri="ehealth/CompartmentOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/ConfidentialityOntology.owl" uri="ehealth/ConfidentialityOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/DataOperationOntology.owl" uri="ehealth/DataOperationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/IntegrityOntology.owl" uri="ehealth/IntegrityOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/ObjectOntology.owl" uri="ehealth/ObjectOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/ObligationOntology.owl" uri="ehealth/ObligationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/PaymentSourceOntology.owl" uri="ehealth/PaymentSourceOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/PermissionOntology.owl" uri="ehealth/PermissionOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/PrivacyOperationOntology.owl" uri="ehealth/PrivacyOperationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/PurposeOfUseOntology.owl" uri="ehealth/PurposeOfUseOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/RBAC_Ontology.owl" uri="ehealth/RBAC_Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/RefrainOntology.owl" uri="ehealth/RefrainOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/RoleOntology.owl" uri="ehealth/RoleOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/RouteOntology.owl" uri="ehealth/RouteOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/SecurityAndPrivacyOntology.owl" uri="ehealth/SecurityAndPrivacyOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/SensitivityOntology.owl" uri="ehealth/SensitivityOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/ServiceDeliveryLocationOntology.owl" uri="ehealth/ServiceDeliveryLocationOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/SomewhereHospitalOntology.owl" uri="ehealth/SomewhereHospitalOntology.owl"/>
+    </group>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1587154661466" name="http://drozdowicz.net/onto/port" uri="port.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661466" name="http://drozdowicz.net/onto/port_inst" uri="port_inst.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661466" name="http://drozdowicz.net/onto/port_mapping" uri="port_mapping.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661466" name="http://drozdowicz.net/onto/transport_inst" uri="transport_inst.owl"/>
+    </group>
+</catalog>
