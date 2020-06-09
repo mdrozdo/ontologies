@@ -10,14 +10,14 @@
 ]>
 
 
-<rdf:RDF xmlns="http://drozdowicz.net/sxacml/eHealthSample#"
-     xml:base="http://drozdowicz.net/sxacml/eHealthSample"
+<rdf:RDF xmlns="http://drozdowicz.net/sxacml/sample-ehealth/ehealth#"
+     xml:base="http://drozdowicz.net/sxacml/sample-ehealth/ehealth"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:conformance-test="urn:oasis:names:tc:xacml:2.0:conformance-test:"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://drozdowicz.net/sxacml/eHealthSample">
+    <owl:Ontology rdf:about="http://drozdowicz.net/sxacml/sample-ehealth/ehealth">
         <owl:imports rdf:resource="http://hl7.org/ontology/ObjectOntology.owl/1.0.0"/>
         <owl:imports rdf:resource="http://hl7.org/ontology/RoleOntology.owl/1.0.0"/>
     </owl:Ontology>
@@ -35,9 +35,9 @@
     
 
 
-    <!-- http://drozdowicz.net/sxacml/eHealthSample#isAdult -->
+    <!-- http://drozdowicz.net/sxacml/sample-ehealth/ehealth#isAdult -->
 
-    <owl:DatatypeProperty rdf:about="http://drozdowicz.net/sxacml/eHealthSample#isAdult">
+    <owl:DatatypeProperty rdf:about="http://drozdowicz.net/sxacml/sample-ehealth/ehealth#isAdult">
         <rdfs:range rdf:resource="&xsd;boolean"/>
         <rdfs:domain rdf:resource="&owl;Thing"/>
     </owl:DatatypeProperty>
@@ -61,25 +61,25 @@
     
 
 
-    <!-- http://drozdowicz.net/sxacml/eHealthSample:BloodPressure -->
+    <!-- http://drozdowicz.net/sxacml/sample-ehealth/ehealth:BloodPressure -->
 
-    <owl:Class rdf:about="http://drozdowicz.net/sxacml/eHealthSample:BloodPressure">
-        <rdfs:subClassOf rdf:resource="http://drozdowicz.net/sxacml/eHealthSample:SensorObservation"/>
+    <owl:Class rdf:about="http://drozdowicz.net/sxacml/sample-ehealth/ehealth:BloodPressure">
+        <rdfs:subClassOf rdf:resource="http://drozdowicz.net/sxacml/sample-ehealth/ehealth:SensorObservation"/>
     </owl:Class>
     
 
 
-    <!-- http://drozdowicz.net/sxacml/eHealthSample:GlucoseLevel -->
+    <!-- http://drozdowicz.net/sxacml/sample-ehealth/ehealth:GlucoseLevel -->
 
-    <owl:Class rdf:about="http://drozdowicz.net/sxacml/eHealthSample:GlucoseLevel">
-        <rdfs:subClassOf rdf:resource="http://drozdowicz.net/sxacml/eHealthSample:SensorObservation"/>
+    <owl:Class rdf:about="http://drozdowicz.net/sxacml/sample-ehealth/ehealth:GlucoseLevel">
+        <rdfs:subClassOf rdf:resource="http://drozdowicz.net/sxacml/sample-ehealth/ehealth:SensorObservation"/>
     </owl:Class>
     
 
 
-    <!-- http://drozdowicz.net/sxacml/eHealthSample:SensorObservation -->
+    <!-- http://drozdowicz.net/sxacml/sample-ehealth/ehealth:SensorObservation -->
 
-    <owl:Class rdf:about="http://drozdowicz.net/sxacml/eHealthSample:SensorObservation">
+    <owl:Class rdf:about="http://drozdowicz.net/sxacml/sample-ehealth/ehealth:SensorObservation">
         <rdfs:subClassOf rdf:resource="http://hl7.org/ontology/ObjectOntology.owl#ExternalClinicalInformation"/>
     </owl:Class>
     

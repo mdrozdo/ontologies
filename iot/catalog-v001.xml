@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Edited Redirect" name="http://purl.org/dc/elements/1.1/" uri="dc.ttl"/>
-    <uri id="User Entered Import Resolution" name="http://drozdowicz.net/onto/request" uri="request.owl"/>
+    <uri id="User Entered Import Resolution" name="https://w3id.org/sxacml/request" uri="request.owl"/>
     <uri id="User Edited Redirect" name="http://ontology.tno.nl/transport" uri="transport.ttl"/>
     <uri id="User Edited Redirect" name="http://www.w3.org/ns/org#" uri="org.rdf"/>
     <uri id="User Edited Redirect" name="http://www.w3.org/ns/ssn/" uri="ssn.ttl"/>
@@ -9,17 +9,17 @@
     <uri id="User Edited Redirect" name="http://www.opengis.net/ont/geosparql" uri="geosparql_vocab_all.rdf"/>
     <uri id="User Edited Redirect" name="http://ontology.tno.nl/logiserv" uri="logiserv.ttl"/>
     <uri id="User Edited Redirect" name="http://ontology.tno.nl/logico" uri="logico.ttl"/>
-    <uri id="User Entered Import Resolution" name="http://drozdowicz.net/onto/access-control" uri="access-control.owl"/>
+    <uri id="User Entered Import Resolution" name="https://w3id.org/sxacml/access-control" uri="access-control.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://drozdowicz.net/onto/access-control-action" uri="access-control-action.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://drozdowicz.net/onto/access-control:" uri="access-control.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://drozdowicz.net/onto/iot" uri="iot.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://drozdowicz.net/onto/port" uri="port.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://drozdowicz.net/onto/port_inst" uri="port_inst.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://drozdowicz.net/onto/port_mapping" uri="port_mapping.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://drozdowicz.net/onto/rbac" uri="rbac.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://drozdowicz.net/onto/request/" uri="request.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://drozdowicz.net/onto/transport_inst" uri="transport_inst.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/access-control-action" uri="access-control-action.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/access-control:" uri="access-control.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/iot" uri="iot.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/sample-port/port" uri="port.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/sample-port/port-data" uri="port-data.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/sample-port/port-mapping" uri="port-mapping.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/rbac" uri="rbac.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/request/" uri="request.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/transport-data" uri="transport-data.owl"/>
         <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://drozdowicz.net/sxacml/onto/request/6d9db33a-70a0-4e05-975c-12925c9f94ed" uri="test.owl"/>
         <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://www.opengis.net/ont/geosparql" uri="geosparql_vocab_all.rdf"/>
         <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://www.w3.org/ns/org" uri="org.rdf"/>

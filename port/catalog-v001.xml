@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="http://drozdowicz.net/onto/access-control/1.0.0" uri="file:/D:/git/phd/thesis/Ontologies/accesscontrol/access-control.owl"/>
-    <uri id="Imports Wizard Entry" name="http://drozdowicz.net/onto/port" uri="port.owl"/>
-    <uri id="User Entered Import Resolution" name="http://drozdowicz.net/onto/iot" uri="file:/D:/git/phd/thesis/Ontologies/iot/iot.owl"/>
+    <uri id="User Entered Import Resolution" name="https://w3id.org/sxacml/access-control/1.0.0" uri="file:/D:/git/phd/thesis/Ontologies/accesscontrol/access-control.owl"/>
+    <uri id="Imports Wizard Entry" name="https://w3id.org/sxacml/sample-port/port" uri="port.owl"/>
+    <uri id="User Entered Import Resolution" name="https://w3id.org/sxacml/iot" uri="file:/D:/git/phd/thesis/Ontologies/iot/iot.owl"/>
     <uri id="User Edited Redirect" name="http://ontology.tno.nl/logiserv" uri="logiserv.ttl"/>
     <uri id="User Edited Redirect" name="http://ontology.tno.nl/logico" uri="logico.ttl"/>
     <uri id="User Edited Redirect" name="http://ontology.tno.nl/transport" uri="transport.ttl"/>
     <group id="Folder Repository, directory=file:/D:/git/phd/thesis/Ontologies/, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="file:/D:/git/phd/thesis/Ontologies/">
-        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/access-control-action" uri="accesscontrol/access-control-action.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/access-control:" uri="accesscontrol/access-control.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/iot" uri="iot/iot.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/port" uri="port/port.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/port_inst" uri="port/port_inst.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/port_mapping" uri="port/port_mapping.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/rbac" uri="accesscontrol/rbac.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/request/" uri="accesscontrol/request.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/onto/transport_inst" uri="port/transport_inst.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/access-control-action" uri="accesscontrol/access-control-action.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/access-control:" uri="accesscontrol/access-control.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/iot" uri="iot/iot.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/sample-port/port" uri="port/port.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/sample-port/port-data" uri="port/port-data.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/sample-port/port-mapping" uri="port/port-mapping.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/rbac" uri="accesscontrol/rbac.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/request/" uri="accesscontrol/request.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/transport-data" uri="port/transport-data.owl"/>
         <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/sxacml/PrivacySample" uri="smartcity/PrivacySample.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/sxacml/eHealthSample" uri="ehealth/eHealth.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/sxacml/sample-ehealth/ehealth" uri="ehealth/eHealth.owl"/>
         <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/CRUDEA_OperationOntology.owl" uri="smartcity/CRUDEA_OperationOntology.owl"/>
         <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/ClinicalObservationOntology.owl" uri="smartcity/ClinicalObservationOntology.owl"/>
         <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/CompartmentOntology.owl" uri="smartcity/CompartmentOntology.owl"/>
@@ -65,9 +65,9 @@
         <uri id="Automatically generated entry, Timestamp=1587154661291" name="shadowed:http://hl7.org/ontology/SomewhereHospitalOntology.owl" uri="ehealth/SomewhereHospitalOntology.owl"/>
     </group>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1587154661466" name="http://drozdowicz.net/onto/port" uri="port.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661466" name="http://drozdowicz.net/onto/port_inst" uri="port_inst.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661466" name="http://drozdowicz.net/onto/port_mapping" uri="port_mapping.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661466" name="http://drozdowicz.net/onto/transport_inst" uri="transport_inst.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661466" name="https://w3id.org/sxacml/sample-port/port" uri="port.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661466" name="https://w3id.org/sxacml/sample-port/port-data" uri="port-data.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661466" name="https://w3id.org/sxacml/sample-port/port-mapping" uri="port-mapping.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661466" name="https://w3id.org/sxacml/transport-data" uri="transport-data.owl"/>
     </group>
 </catalog>
