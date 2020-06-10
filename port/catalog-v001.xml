@@ -15,7 +15,7 @@
         <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/sample-port/port-mapping" uri="port/port-mapping.owl"/>
         <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/rbac" uri="accesscontrol/rbac.owl"/>
         <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/request/" uri="accesscontrol/request.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/transport-data" uri="port/transport-data.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661291" name="https://w3id.org/sxacml/sample-port/transport-data" uri="port/transport-data.owl"/>
         <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/sxacml/PrivacySample" uri="smartcity/PrivacySample.owl"/>
         <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://drozdowicz.net/sxacml/sample-ehealth/ehealth" uri="ehealth/eHealth.owl"/>
         <uri id="Automatically generated entry, Timestamp=1587154661291" name="http://hl7.org/ontology/CRUDEA_OperationOntology.owl" uri="smartcity/CRUDEA_OperationOntology.owl"/>
@@ -68,6 +68,6 @@
         <uri id="Automatically generated entry, Timestamp=1587154661466" name="https://w3id.org/sxacml/sample-port/port" uri="port.owl"/>
         <uri id="Automatically generated entry, Timestamp=1587154661466" name="https://w3id.org/sxacml/sample-port/port-data" uri="port-data.owl"/>
         <uri id="Automatically generated entry, Timestamp=1587154661466" name="https://w3id.org/sxacml/sample-port/port-mapping" uri="port-mapping.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587154661466" name="https://w3id.org/sxacml/transport-data" uri="transport-data.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587154661466" name="https://w3id.org/sxacml/sample-port/transport-data" uri="transport-data.owl"/>
     </group>
 </catalog>

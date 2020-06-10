@@ -19,7 +19,7 @@
         <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/sample-port/port-mapping" uri="port-mapping.owl"/>
         <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/rbac" uri="rbac.owl"/>
         <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/request/" uri="request.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/transport-data" uri="transport-data.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1591392859616" name="https://w3id.org/sxacml/sample-port/transport-data" uri="transport-data.owl"/>
         <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://drozdowicz.net/sxacml/onto/request/6d9db33a-70a0-4e05-975c-12925c9f94ed" uri="test.owl"/>
         <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://www.opengis.net/ont/geosparql" uri="geosparql_vocab_all.rdf"/>
         <uri id="Automatically generated entry, Timestamp=1591392859616" name="http://www.w3.org/ns/org" uri="org.rdf"/>

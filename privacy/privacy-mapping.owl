@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/sxacml/privacy-access-control#"
-     xml:base="https://w3id.org/sxacml/privacy-access-control"
+<rdf:RDF xmlns="https://w3id.org/sxacml/sample-privacy/privacy-mapping#"
+     xml:base="https://w3id.org/sxacml/sample-privacy/privacy-mapping"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:org="http://www.w3.org/ns/org#"
@@ -55,9 +55,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/privacy-access-control#HealthCenterPermission2 -->
+    <!-- https://w3id.org/sxacml/sample-privacy/privacy-mapping#HealthCenterPermission2 -->
 
-    <owl:Class rdf:about="https://w3id.org/sxacml/privacy-access-control#HealthCenterPermission2">
+    <owl:Class rdf:about="https://w3id.org/sxacml/sample-privacy/privacy-mapping#HealthCenterPermission2">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
