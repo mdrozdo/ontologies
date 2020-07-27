@@ -254,7 +254,7 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- https://w3id.org/sxacml/sample-privacy/fitness-tracking#AggregateMetric -->
 
     <owl:Class rdf:about="https://w3id.org/sxacml/sample-privacy/fitness-tracking#AggregateMetric">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/sample-privacy/fitness-tracking#Metric"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/sample-privacy/fitness-tracking#TrainingMetric"/>
     </owl:Class>
     
 
@@ -376,12 +376,6 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
-    <!-- https://w3id.org/sxacml/sample-privacy/fitness-tracking#Metric -->
-
-    <owl:Class rdf:about="https://w3id.org/sxacml/sample-privacy/fitness-tracking#Metric"/>
-    
-
-
     <!-- https://w3id.org/sxacml/sample-privacy/fitness-tracking#OutdoorCycling -->
 
     <owl:Class rdf:about="https://w3id.org/sxacml/sample-privacy/fitness-tracking#OutdoorCycling">
@@ -449,9 +443,7 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <!-- https://w3id.org/sxacml/sample-privacy/fitness-tracking#TrainingMetric -->
 
-    <owl:Class rdf:about="https://w3id.org/sxacml/sample-privacy/fitness-tracking#TrainingMetric">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/sample-privacy/fitness-tracking#Metric"/>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/sxacml/sample-privacy/fitness-tracking#TrainingMetric"/>
     
 
 
@@ -639,16 +631,6 @@ basic geo vocab
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://w3id.org/sxacml/sample-privacy/fitness-tracking#AggregateMetric"/>
-            <rdf:Description rdf:about="https://w3id.org/sxacml/sample-privacy/fitness-tracking#GeospatialMeasurement"/>
-            <rdf:Description rdf:about="https://w3id.org/sxacml/sample-privacy/fitness-tracking#HealthMeasurement"/>
-            <rdf:Description rdf:about="https://w3id.org/sxacml/sample-privacy/fitness-tracking#Training"/>
-            <rdf:Description rdf:about="https://w3id.org/sxacml/sample-privacy/fitness-tracking#TrainingMetric"/>
-        </owl:members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
