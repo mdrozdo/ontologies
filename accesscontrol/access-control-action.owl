@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/sxacml/access-control-action#"
      xml:base="https://w3id.org/sxacml/access-control-action"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:org="http://www.w3.org/ns/org#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:org="http://www.w3.org/ns/org#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="https://w3id.org/sxacml/access-control-action">
         <owl:imports rdf:resource="https://w3id.org/sxacml/access-control"/>
     </owl:Ontology>
@@ -78,9 +78,41 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Abort -->
+    <!-- https://w3id.org/sxacml/access-control#create -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Abort">
+    <rdf:Description rdf:about="https://w3id.org/sxacml/access-control#create">
+        <owl:sameAs rdf:resource="https://w3id.org/sxacml/access-control-action#create"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/sxacml/access-control#delete -->
+
+    <rdf:Description rdf:about="https://w3id.org/sxacml/access-control#delete">
+        <owl:sameAs rdf:resource="https://w3id.org/sxacml/access-control-action#delete"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/sxacml/access-control#read -->
+
+    <rdf:Description rdf:about="https://w3id.org/sxacml/access-control#read">
+        <owl:sameAs rdf:resource="https://w3id.org/sxacml/access-control-action#read"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/sxacml/access-control#update -->
+
+    <rdf:Description rdf:about="https://w3id.org/sxacml/access-control#update">
+        <owl:sameAs rdf:resource="https://w3id.org/sxacml/access-control-action#update"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/sxacml/access-control-action#abort -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#abort">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of an object representing an Act to &quot;aborted&quot;, i.e., terminated prior to the originally intended completion.</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -88,9 +120,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Activate -->
+    <!-- https://w3id.org/sxacml/access-control-action#activate -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Activate">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#activate">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of an object representing an Act to &quot;active&quot;, i.e., so it can be performed or is being performed, for the first time. (Contrast with REACTIVATE.)</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -98,9 +130,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Annotate -->
+    <!-- https://w3id.org/sxacml/access-control-action#annotate -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Annotate">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#annotate">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Add commentary, explanatory notes, critical notes or similar content to an object.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -108,9 +140,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Anonymize -->
+    <!-- https://w3id.org/sxacml/access-control-action#anonymize -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Anonymize">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#anonymize">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description>Remove any information that could result in identifying the information subject.  [From ANONY concept in HL7 ActCode code system, OID: 2.16.840.1.113883.5.4] </dc:description>
         <dc:source>HL7 v3 ObligationPolicy value set</dc:source>
@@ -118,9 +150,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Append -->
+    <!-- https://w3id.org/sxacml/access-control-action#append -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Append">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#append">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Fundamental operation in an Information System (IS) that results only in the addition of information to an object already in existence.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -128,9 +160,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Archive -->
+    <!-- https://w3id.org/sxacml/access-control-action#archive -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Archive">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#archive">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Move (the content of) an object to long term storage.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -138,9 +170,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Backup -->
+    <!-- https://w3id.org/sxacml/access-control-action#backup -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Backup">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#backup">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Produce another object with the same content as the original for potential recovery, i.e., create a spare copy.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -148,9 +180,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Cancel -->
+    <!-- https://w3id.org/sxacml/access-control-action#cancel -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Cancel">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#cancel">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of an object representing an Act to &quot;cancelled&quot;, i.e., abandoned before activation.</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -158,17 +190,17 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Close -->
+    <!-- https://w3id.org/sxacml/access-control-action#close -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Close">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#close">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#PhysicalAction"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Complete -->
+    <!-- https://w3id.org/sxacml/access-control-action#complete -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Complete">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#complete">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of an object representing an Act to &quot;completed&quot;, i.e., terminated normally after all of its constituents have been performed.</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -176,9 +208,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Convert -->
+    <!-- https://w3id.org/sxacml/access-control-action#convert -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Convert">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#convert">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Derive another object with the same content in a different form (different data model, different representation, and/or different format).</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -186,9 +218,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Copy -->
+    <!-- https://w3id.org/sxacml/access-control-action#copy -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Copy">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#copy">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Produce another online object with the same content as the original.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -196,9 +228,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Create -->
+    <!-- https://w3id.org/sxacml/access-control-action#create -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Create">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#create">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Fundamental operation in an Information System (IS) that results only in the act of bringing an object into existence.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -206,9 +238,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Decrypt -->
+    <!-- https://w3id.org/sxacml/access-control-action#decrypt -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Decrypt">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#decrypt">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description>Render information readable by algorithmically transforming ciphertext into plaintext. [Derived from ENCRYPT concept in HL7 ActCode code system, OID: 2.16.840.1.113883.5.4]</dc:description>
         <dc:source>HL7 v3 ObligationPolicy value set</dc:source>
@@ -216,9 +248,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Deduplicate -->
+    <!-- https://w3id.org/sxacml/access-control-action#deduplicate -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Deduplicate">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#deduplicate">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description>Remove repetition/copies of data.  [March 12, 2013 HL7 Security Work Group teleconference]</dc:description>
         <dc:source>teleconference</dc:source>
@@ -226,9 +258,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Deidentify -->
+    <!-- https://w3id.org/sxacml/access-control-action#deidentify -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Deidentify">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#deidentify">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description>Strip information of data that would allow the identification of the source of the information or the information subject.  [From DEID concept in HL7 ActCode code system, OID: 2.16.840.1.113883.5.4]</dc:description>
         <dc:source>HL7 v3 ObligationPolicy value set</dc:source>
@@ -236,9 +268,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Delete -->
+    <!-- https://w3id.org/sxacml/access-control-action#delete -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Delete">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#delete">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Fundamental operation in an Information System (IS) that results only in the removal of information about an object from memory or storage.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -246,9 +278,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Derive -->
+    <!-- https://w3id.org/sxacml/access-control-action#derive -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Derive">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#derive">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Make another object with content based on but different from that of an existing object.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -256,9 +288,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Encrypt -->
+    <!-- https://w3id.org/sxacml/access-control-action#encrypt -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Encrypt">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#encrypt">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description>Render information unreadable by algorithmically transforming plaintext into ciphertext. [From ENCRYPT concept in HL7 ActCode code system, OID: 2.16.840.1.113883.5.4]</dc:description>
         <dc:source>HL7 v3 ObligationPolicy value set</dc:source>
@@ -266,17 +298,17 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Enter -->
+    <!-- https://w3id.org/sxacml/access-control-action#enter -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Enter">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#enter">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#PhysicalAction"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Excerpt -->
+    <!-- https://w3id.org/sxacml/access-control-action#excerpt -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Excerpt">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#excerpt">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Derive another object which includes part but not all of the original content.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -284,9 +316,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Execute -->
+    <!-- https://w3id.org/sxacml/access-control-action#execute -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Execute">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#execute">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Fundamental operation in an IS that results only in initiating performance of a single or set of programs (i.e., software objects).</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -294,9 +326,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Export -->
+    <!-- https://w3id.org/sxacml/access-control-action#export -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Export">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#export">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Reproduce an object (or a portion thereof) so that the data leaves the control of the security subsystem.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -304,9 +336,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Forward -->
+    <!-- https://w3id.org/sxacml/access-control-action#forward -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Forward">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#forward">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Communicate (the content of) an object to another covered entity.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -314,9 +346,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Hold -->
+    <!-- https://w3id.org/sxacml/access-control-action#hold -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Hold">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#hold">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of an object representing an Act to &quot;held&quot;</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -324,9 +356,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Identify -->
+    <!-- https://w3id.org/sxacml/access-control-action#identify -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Identify">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#identify">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description>Add information to data that would allow the identification of the source of the information or the information subject.  [Derived from DEID concept in HL7 ActCode code system, OID: 2.16.840.1.113883.5.4] </dc:description>
         <dc:source>[Deidentify]</dc:source>
@@ -334,9 +366,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Import -->
+    <!-- https://w3id.org/sxacml/access-control-action#import -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Import">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#import">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Reproduce an object (or a portion thereof) so that the data enters the control of the security subsystem.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -344,9 +376,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Jump -->
+    <!-- https://w3id.org/sxacml/access-control-action#jump -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Jump">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#jump">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of an object representing an Act to a normal state.</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -354,33 +386,33 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Leave -->
+    <!-- https://w3id.org/sxacml/access-control-action#leave -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Leave">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#leave">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#PhysicalAction"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Load -->
+    <!-- https://w3id.org/sxacml/access-control-action#load -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Load">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#load">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#PhysicalAction"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Lock -->
+    <!-- https://w3id.org/sxacml/access-control-action#lock -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Lock">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#lock">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#PhysicalAction"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Mask -->
+    <!-- https://w3id.org/sxacml/access-control-action#mask -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Mask">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#mask">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description>Render information unreadable and unusable by algorithmically transforming plaintext into ciphertext. User may be provided a key to decrypt per license or &quot;shared secret&quot;. [From MASK concept in HL7 ActCode code system, OID: 2.16.840.1.113883.5.4]</dc:description>
         <dc:source>HL7 v3 ObligationPolicy value set</dc:source>
@@ -388,9 +420,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Modify_status -->
+    <!-- https://w3id.org/sxacml/access-control-action#modify_status -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Modify_status">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#modify_status">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of an object representing an Act.</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -398,9 +430,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Move -->
+    <!-- https://w3id.org/sxacml/access-control-action#move -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Move">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#move">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Relocate (the content of) an object.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -408,9 +440,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Nullify -->
+    <!-- https://w3id.org/sxacml/access-control-action#nullify -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Nullify">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#nullify">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of an object representing an Act to &quot;nullified&quot;, i.e., treat as though it never existed.</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -418,9 +450,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Obsolete -->
+    <!-- https://w3id.org/sxacml/access-control-action#obsolete -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Obsolete">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#obsolete">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of an object representing an Act to &quot;obsolete&quot; when it has been replaced by a new instance.</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -428,17 +460,17 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Open -->
+    <!-- https://w3id.org/sxacml/access-control-action#open -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Open">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#open">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#PhysicalAction"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Print -->
+    <!-- https://w3id.org/sxacml/access-control-action#print -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Print">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#print">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Render an object in printed form (typically hardcopy).</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -446,9 +478,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Pseudonymize -->
+    <!-- https://w3id.org/sxacml/access-control-action#pseudonymize -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Pseudonymize">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#pseudonymize">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description>Strip information of data that would allow the identification of the source of the information or the information subject. Custodian may retain a key to relink data necessary to reidentify the information subject. [From PSEUD concept in HL7 ActCode code system, OID: 2.16.840.1.113883.5.4] </dc:description>
         <dc:source>HL7 v3 ObligationPolicy value set</dc:source>
@@ -456,9 +488,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Purge -->
+    <!-- https://w3id.org/sxacml/access-control-action#purge -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Purge">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#purge">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Operation that results in the permanent, unrecoverable removal of information about an object from memory or storage (e.g. by multiple overwrites with a series of random bits).</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -466,9 +498,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Reactivate -->
+    <!-- https://w3id.org/sxacml/access-control-action#reactivate -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Reactivate">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#reactivate">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of a formerly active object representing an Act to &quot;active&quot;, i.e., so it can again be performed or is being performed. (Contrast with ACTIVATE.)</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -476,9 +508,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Read -->
+    <!-- https://w3id.org/sxacml/access-control-action#read -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Read">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#read">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Fundamental operation in an Information System (IS) that results only in the flow of information about an object to a subject.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -486,9 +518,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Redact -->
+    <!-- https://w3id.org/sxacml/access-control-action#redact -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Redact">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#redact">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description>Remove information, which is not authorized to be accessed, used, or disclosed from records made available to otherwise authorized users. [From REDACT concept in HL7 ActCode code system, OID: 2.16.840.1.113883.5.4]</dc:description>
         <dc:source>HL7 v3 ObligationPolicy value set</dc:source>
@@ -496,9 +528,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Reidentify -->
+    <!-- https://w3id.org/sxacml/access-control-action#reidentify -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Reidentify">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#reidentify">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description>Restore information to data that would allow the identification of the source of the information or the information subject.  [Derived from DEID concept in HL7 ActCode code system, OID: 2.16.840.1.113883.5.4]</dc:description>
         <dc:source>[Deidentify]</dc:source>
@@ -506,9 +538,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Release -->
+    <!-- https://w3id.org/sxacml/access-control-action#release -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Release">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#release">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of an object representing an Act so it is no longer &quot;held&quot;, i.e., allow action to occur.</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -516,9 +548,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Replace -->
+    <!-- https://w3id.org/sxacml/access-control-action#replace -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Replace">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#replace">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Replace an object with another object. (The replaced object becomes obsolete in the process.)</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -526,9 +558,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Reproduce -->
+    <!-- https://w3id.org/sxacml/access-control-action#reproduce -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Reproduce">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#reproduce">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Produce another online or offline object with the same content as the original. [Use of Reproduce does not imply any form of Copy.]</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -536,9 +568,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Restore -->
+    <!-- https://w3id.org/sxacml/access-control-action#restore -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Restore">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#restore">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Produce another object with the same content as one previously backed up, i.e., recreate a readily usable copy.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -546,9 +578,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Resume -->
+    <!-- https://w3id.org/sxacml/access-control-action#resume -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Resume">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#resume">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of a suspended object representing an Act to &quot;active&quot;, i.e., so it can be performed or is being performed.</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -556,9 +588,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Sign -->
+    <!-- https://w3id.org/sxacml/access-control-action#sign -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Sign">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#sign">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Affix authentication information (an electronic signature) to an object so that its origin and integrity can be verified.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -566,9 +598,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Suspend -->
+    <!-- https://w3id.org/sxacml/access-control-action#suspend -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Suspend">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#suspend">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Change the status of an object representing an Act to &quot;suspended&quot;, i.e., so it is temporarily not in service.</dc:description>
         <dc:source>HL7 DataOperation Vocabulary</dc:source>
@@ -576,9 +608,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Transfer -->
+    <!-- https://w3id.org/sxacml/access-control-action#transfer -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Transfer">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#transfer">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Communicate (the content of) an object to an external clearinghouse without examining the content.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -586,9 +618,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Translate -->
+    <!-- https://w3id.org/sxacml/access-control-action#translate -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Translate">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#translate">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Derive another object in a different natural language, e.g., from English to Spanish.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -596,25 +628,25 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Unload -->
+    <!-- https://w3id.org/sxacml/access-control-action#unload -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Unload">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#unload">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#PhysicalAction"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Unlock -->
+    <!-- https://w3id.org/sxacml/access-control-action#unlock -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Unlock">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#unlock">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#PhysicalAction"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Update -->
+    <!-- https://w3id.org/sxacml/access-control-action#update -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Update">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#update">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Fundamental operation in an Information System (IS) that results only in the revision or alteration of an object.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -622,9 +654,9 @@
     
 
 
-    <!-- https://w3id.org/sxacml/access-control-action#Verify -->
+    <!-- https://w3id.org/sxacml/access-control-action#verify -->
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#Verify">
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control-action#verify">
         <rdf:type rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
         <dc:description xml:lang="en">Determine whether an object has been altered and whether its signature was affixed by the claimed signer.</dc:description>
         <dc:source>HL7 RBAC</dc:source>
@@ -633,5 +665,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 

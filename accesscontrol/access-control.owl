@@ -111,6 +111,14 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <owl:equivalentClass rdf:resource="https://w3id.org/sxacml/access-control#Subject"/>
+    </rdf:Description>
+    
+
+
     <!-- https://w3id.org/sxacml/access-control#Action -->
 
     <owl:Class rdf:about="https://w3id.org/sxacml/access-control#Action"/>
@@ -126,7 +134,7 @@
     <!-- https://w3id.org/sxacml/access-control#Create -->
 
     <owl:Class rdf:about="https://w3id.org/sxacml/access-control#Create">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/access-control#Action"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
     </owl:Class>
     
 
@@ -134,7 +142,7 @@
     <!-- https://w3id.org/sxacml/access-control#Delete -->
 
     <owl:Class rdf:about="https://w3id.org/sxacml/access-control#Delete">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/access-control#Action"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
     </owl:Class>
     
 
@@ -171,7 +179,7 @@
     <!-- https://w3id.org/sxacml/access-control#Read -->
 
     <owl:Class rdf:about="https://w3id.org/sxacml/access-control#Read">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/access-control#Action"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
     </owl:Class>
     
 
@@ -196,9 +204,7 @@
 
     <!-- https://w3id.org/sxacml/access-control#Subject -->
 
-    <owl:Class rdf:about="https://w3id.org/sxacml/access-control#Subject">
-        <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </owl:Class>
+    <owl:Class rdf:about="https://w3id.org/sxacml/access-control#Subject"/>
     
 
 
@@ -211,14 +217,55 @@
     <!-- https://w3id.org/sxacml/access-control#Update -->
 
     <owl:Class rdf:about="https://w3id.org/sxacml/access-control#Update">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/access-control#Action"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/access-control-action#DataAction"/>
     </owl:Class>
     
 
 
-    <!-- http://xmlns.com/foaf/0.1/Agent -->
+    <!-- https://w3id.org/sxacml/access-control-action#DataAction -->
 
-    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    <owl:Class rdf:about="https://w3id.org/sxacml/access-control-action#DataAction"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/sxacml/access-control#create -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control#create">
+        <rdf:type rdf:resource="https://w3id.org/sxacml/access-control#Create"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sxacml/access-control#delete -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control#delete"/>
+    
+
+
+    <!-- https://w3id.org/sxacml/access-control#read -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control#read">
+        <rdf:type rdf:resource="https://w3id.org/sxacml/access-control#Read"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/sxacml/access-control#update -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/sxacml/access-control#update">
+        <rdf:type rdf:resource="https://w3id.org/sxacml/access-control#Update"/>
+    </owl:NamedIndividual>
     
 
 
