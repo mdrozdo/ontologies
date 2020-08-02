@@ -1,14 +1,38 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/sxacml/rbac#"
      xml:base="https://w3id.org/sxacml/rbac"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
     <owl:Ontology rdf:about="https://w3id.org/sxacml/rbac">
         <owl:imports rdf:resource="https://w3id.org/sxacml/access-control"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
     
 
 
@@ -23,10 +47,29 @@
     
 
 
+    <!-- https://w3id.org/sxacml/rbac#areSeparated -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sxacml/rbac#areSeparated">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://w3id.org/sxacml/rbac#Role"/>
+        <rdfs:range rdf:resource="https://w3id.org/sxacml/rbac#Role"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/sxacml/rbac#hasRoleEnabled -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/sxacml/rbac#hasRoleEnabled">
         <rdfs:domain rdf:resource="https://w3id.org/sxacml/access-control#Subject"/>
+        <rdfs:range rdf:resource="https://w3id.org/sxacml/rbac#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/sxacml/rbac#isSubRoleOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/sxacml/rbac#isSubRoleOf">
+        <rdfs:domain rdf:resource="https://w3id.org/sxacml/rbac#Role"/>
         <rdfs:range rdf:resource="https://w3id.org/sxacml/rbac#Role"/>
     </owl:ObjectProperty>
     
@@ -43,9 +86,157 @@
     
 
 
+    <!-- http://www.w3.org/2002/07/owl#Nothing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing">
+        <owl:equivalentClass rdf:resource="https://w3id.org/sxacml/rbac#ConflictingRoleSubject"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/sxacml/rbac#ConflictingRoleSubject -->
+
+    <owl:Class rdf:about="https://w3id.org/sxacml/rbac#ConflictingRoleSubject">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/sxacml/access-control#Subject"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/sxacml/rbac#Role -->
 
     <owl:Class rdf:about="https://w3id.org/sxacml/rbac#Role"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://w3id.org/sxacml/rbac#aSubject">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/sxacml/rbac#oneRole">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/sxacml/rbac#otherRole">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/sxacml/rbac#aRole">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://w3id.org/sxacml/rbac#aSubrole">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">separationOfRoles</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/sxacml/rbac#hasRoleEnabled"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/sxacml/rbac#aSubject"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/sxacml/rbac#oneRole"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/sxacml/rbac#hasRoleEnabled"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/sxacml/rbac#aSubject"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/sxacml/rbac#otherRole"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="https://w3id.org/sxacml/rbac#areSeparated"/>
+                                        <swrl:argument1 rdf:resource="https://w3id.org/sxacml/rbac#oneRole"/>
+                                        <swrl:argument2 rdf:resource="https://w3id.org/sxacml/rbac#otherRole"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="https://w3id.org/sxacml/rbac#ConflictingRoleSubject"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/sxacml/rbac#aSubject"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">subRole</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/sxacml/rbac#hasRoleEnabled"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/sxacml/rbac#aSubject"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/sxacml/rbac#aRole"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="https://w3id.org/sxacml/rbac#isSubRoleOf"/>
+                                <swrl:argument1 rdf:resource="https://w3id.org/sxacml/rbac#aSubrole"/>
+                                <swrl:argument2 rdf:resource="https://w3id.org/sxacml/rbac#aRole"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://w3id.org/sxacml/rbac#hasRoleEnabled"/>
+                        <swrl:argument1 rdf:resource="https://w3id.org/sxacml/rbac#aSubject"/>
+                        <swrl:argument2 rdf:resource="https://w3id.org/sxacml/rbac#aSubrole"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 
